@@ -35,7 +35,7 @@ function draw(){
             let dropToAdd = drops.splice(i,1)
 
             
-            add dropVolume to poolVol
+            //add dropVolume to poolVol
             let radius = dropToAdd[0].diameter/2
 
             poolVol += (PI * pow(radius, 2))
