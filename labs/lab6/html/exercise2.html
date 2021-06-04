@@ -8,17 +8,31 @@
 </head>
 <body>
 
+    
+    <!-- area for user to input pets name -->
     <div id = "userInputDiv">
         <input id = "petName"/>
+        <button onclick = "makePet()">Make My Pet</button>
     </div>
 
     <div id = "petStats">
 
-        <h1 id = "name"></h1>
-        <h2 id = "happiness"></h2>
-        <h3 id = "happinessStat"></h3>
-        <h2 id = "energy"></h2>
-        <h3 id = "energyStat"></h3>
+        <!-- area to display pets name -->
+        <div>
+            <h1 id = "name"></h1>
+        </div>
+        <!-- area to add happiness and display it as it changes -->
+        <div>
+            <h2 id = "happiness"></h2>
+            <h3 id = "happinessStat"></h3>
+            <button onclick = "raiseHappiness()" id = "happinessButton"></button>
+        </div>
+        <!-- area for energy -->
+        <div>
+            <h2 id = "energy"></h2>
+            <h3 id = "energyStat"></h3>
+            <button onclick = "raiseEnergy()" id = "energyButton"></button>
+        </div>
 
     </div>
 

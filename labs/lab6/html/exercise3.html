@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .stat{
+            font-weight: bold;            
+            margin-left: 20px;
+        }
+    </style>
+
+    <h1>Fight Club</h1>
+
+    <!-- place to modify enemy hp as it changes -->
+    <h2><span>Enemy HP : </span><span id = "enemyHP"></span></h2>
+
+    <!-- area for enemy stats -->
+    <p>
+        <span class = "stat">Attack: </span>
+        <span id = "enemyAttack"></span>
+        <span class = "stat">Defense: </span>
+        <span id = "enemyDefense"></span>
+    </p>
+    <br/>
+
+    <!-- area for your (player) stats -->
+    <h2><span>Your HP : </span><span id = "playerHP"></span></h2>
+    <p>
+        <span class = "stat">Attack: </span>
+        <span id = "playerAttack"></span>
+        <span class = "stat">Defense: </span>
+        <span id = "playerDefense"></span>
+    </p>
+
+    <!-- attack button -->
+    <button onclick = "attack()">Attack</button>
+
+    <!-- area to display combat log -->
+    <div id = "combatLog">
+
+    </div>
+
+    <script src = "../js/exercise3.js"></script>
+</body>
+</html>
