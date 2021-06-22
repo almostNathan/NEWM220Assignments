@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #colorDisplay{
+            background-color: black;
+            height: 200px;
+            width: 100%
+        }
+
+        #rgbDist{
+            height: 50px;
+            width: 100%;
+            border-style: solid;
+            border-width: 2px;
+            border-color: gray;
+            text-align: center;
+            color: gray;
+            line-height: 50px;
+            font-size: 24px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .button{
+            float: left;
+            height: 30px;
+            width: 50px;
+            text-align: center;
+            background-color: grey;
+            color: white;
+            margin-left: 5px;
+            margin-right: 5px;
+            line-height: 25px;
+        }
+        .label{
+            float: left;
+            clear:left;
+            color: gray;
+            height: 50px;
+            width: 100px;
+            line-height: 25px;
+        }
+    </style>
+
+    <div id = "colorDisplay"></div>
+    <div id = "rgbDist">current color: rgb(0,0,0)</div>
+
+    <div class = "container">
+        <div class = "label">Red:</div>
+        <div class = "button" data-color = "red" data-value = "1" onclick = "changeColor(event)">+1</div>
+        <div class = "button" data-color = "red" data-value = "5" onclick = "changeColor(event)">+5</div>
+        <div class = "button" data-color = "red" data-value = "10" onclick = "changeColor(event)">+10</div>
+    </div>
+    <div class = "container">
+        <div class = "label">Green:</div>
+        <div class = "button" data-color = "green" data-value = "1" onclick = "changeColor(event)">+1</div>
+        <div class = "button" data-color = "green" data-value = "5" onclick = "changeColor(event)">+5</div>
+        <div class = "button" data-color = "green" data-value = "10" onclick = "changeColor(event)">+10</div>
+    </div>
+    <div class = "container">
+        <div class = "label">Blue:</div>
+        <div class = "button" data-color = "blue" data-value = "1" onclick = "changeColor(event)">+1</div>
+        <div class = "button" data-color = "blue" data-value = "5" onclick = "changeColor(event)">+5</div>
+        <div class = "button" data-color = "blue" data-value = "10" onclick = "changeColor(event)">+10</div>
+    </div>
+    
+    <script src = "../js/colorMixer.js"></script>
+</body>
+</html>
